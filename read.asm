@@ -6,7 +6,7 @@
 ; copyright:
 ;	Copyright (c) 2024 zxsvrx
 ; license:
-;	MIT License (see LICENSE in /master)
+;	MIT License (see LICENSE in /main)
 ; platform:
 ; 	macOS
 ; architecture:

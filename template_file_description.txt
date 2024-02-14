@@ -8,7 +8,7 @@
 ; license:
 ;   -- license --
 ;   -- default:
-;	MIT License (see LICENSE in /master)
+;	MIT License (see LICENSE in /main)
 ; platform:
 ; 	macOS
 ; architecture:
