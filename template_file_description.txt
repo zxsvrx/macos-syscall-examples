@@ -4,7 +4,7 @@
 ; author:
 ; 	-- author --
 ; copyright:
-;	Copyright (c) -- date -- -- name --
+;	Copyright (c) -- year -- -- name --
 ; license:
 ;   -- license --
 ;   -- default:
