@@ -26,7 +26,7 @@ The call order is RTL (right to left)
 
 ### Example
 
-#### If a function is called that takes 3 arguments,**
+#### If a function is called that takes 3 arguments
 
 the first argument is passed in `RDI`
 
