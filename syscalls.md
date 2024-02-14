@@ -1,6 +1,7 @@
 # macOS syscalls
 
-[Source from the xnu kernel](https://github.com/opensource-apple/xnu/blob/master/bsd/kern/syscalls.master)
+[Source from the xnu kernel repository](https://github.com/opensource-apple/xnu/blob/master/bsd/kern/syscalls.master)
+
 [Full list](https://gist.github.com/nikolay-n/5ad64ae82ae91c21d2d2a5be5d49b3b3#file-syscalls-txt)
 
 | syscall number | syscall name | syscall args (name: size)      |
