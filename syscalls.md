@@ -5,7 +5,7 @@
 
 | syscall number | syscall name | syscall args (name: size)      |
 |----------------|--------------|--------------------------------|
-| 1 (0x1)        | exit         | rval: int                      |
+| 1 (0x1)        | exit         | rval: 4                        |
 | 2 (0x2)        | fork         |                                |
 | 3 (0x3)        | read         | fd: 4, cbuf: 8, nbyte: 8       |
 | 4 (0x4)        | write        | fd: 4, cbuf: 8, nbyte: 8       |
