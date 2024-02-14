@@ -1,4 +1,4 @@
-; -----------------------------------------------------------
+; -----------------------------------------------------------------------------
 ; name:
 ; 	hello_world.asm
 ; author:
@@ -22,7 +22,7 @@
 ; 	nasm -f macho64 -o hello_world.o hello_world.asm && gcc -nostdlib -o hello_world hello_world.o
 ;
 ; Program that exits with return code 0 (no error)
-; -----------------------------------------------------------
+; -----------------------------------------------------------------------------
 
 ; syscall number for exit
 %define SYS_exit 0x2000001
