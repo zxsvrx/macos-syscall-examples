@@ -45,11 +45,11 @@
 %define MAP_PROT_READ 	0x1
 %define MAP_PROT_WRITE 	0x2
 
-%define MAP_PRIVATE		0x2
+%define MAP_PRIVATE	0x2
 
 %define MAP_ANONYMOUS	0x1000
 
-%define MAP_FAILED		-1
+%define MAP_FAILED	-1
 
 
 	section .text
@@ -74,7 +74,7 @@ _main:
 	mov r8, 0
 	syscall
 
-; move 8 bytes (QWORD) into allocated
+; move 8 bytes (QWORD) into >allocated<
 	mov [rel allocated], QWORD rax
 
 	cmp rax, MAP_FAILED
@@ -90,7 +90,7 @@ _main.success:
 
 ; now we unmap the allocated memory
 	mov rax, SYS_munmap
-	mov rdi, [rel allocated]
+	lea rdi, [rel allocated]
 ; we have to pass the area we want to free.
 ; because we want to completely free the mapped region, we need to pass our allocated size
 	mov rsi, size
