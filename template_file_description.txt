@@ -1,0 +1,35 @@
+; -----------------------------------------------------------
+; name:
+; 	-- name of the program --
+; author:
+; 	-- author --
+; copyright:
+;	-- copyright notice --
+; license:
+;   -- license --
+;   -- default:
+;	MIT License (see LICENSE in /master)
+; platform:
+; 	macOS
+; architecture:
+; 	x86_64
+; syntax:
+; 	-- syntax --
+; 	-- default:
+;	nasm
+; compiler:
+; 	-- compiler --
+; 	-- default:
+;	nasm 2.16.01
+; build tool:
+; 	-- build tool --
+; 	-- default:
+; 	gcc (Apple clang version 15.0.0)
+;
+; build with:
+;	-- build command --
+; 	-- default:
+; 	nasm -f macho64 -o file.o file.asm && gcc -nostdlib -o file file.o
+;
+; -- description --
+; -----------------------------------------------------------
