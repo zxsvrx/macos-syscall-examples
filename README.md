@@ -24,3 +24,7 @@ I do not know of any fix for the linker (ld) warning. But because it is only a w
 I am not a professional. The code is based on what I could find on the web and what I thaught myself.
 
 If you encounter any errors or problems feel free to suggest changes and / or fixes.
+
+## Other
+
+This repository is inspired by [this repository for 32bit assembly](https://github.com/ruda/osx-syscall-examples/tree/master)
