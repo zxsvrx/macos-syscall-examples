@@ -4,7 +4,7 @@
 ; author:
 ; 	zxsvrx
 ; copyright:
-;	Copyright (c) -- year -- zxsvrx
+;	Copyright (c) 2024 zxsvrx
 ; license:
 ;	MIT License (see LICENSE in /main)
 ; platform:
