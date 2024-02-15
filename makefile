@@ -2,7 +2,7 @@ ASSEMBLER = nasm -f macho64
 
 LINKER = gcc -nostdlib
 
-FILES = exit read hello_world io alloc uselibio
+FILES = exit read hello_world io alloc uselibio use_ctime
 
 
 all: ${FILES}
@@ -14,6 +14,7 @@ clean:
 	rm io
 	rm alloc
 	rm uselibio
+	rm use_ctime
 
 exit: exit.asm
 	${ASSEMBLER} -o exit.o exit.asm
@@ -43,6 +44,11 @@ alloc: alloc.asm
 
 uselibio: uselibio.asm libio.asm
 	${ASSEMBLER} -o libio.o libio.asm
-	${ASSEMBLER} -o uselibio.o uselibio.asm
+	${ASSEMBLE} -o uselibio.o uselibio.asm
 	${LINKER} -o uselibio uselibio.o libio.o
 	@rm libio.o uselibio.o
+
+use_ctime: use_ctime.asm
+	${ASSEMBLER} -o use_ctime.o use_ctime.asm
+	${LINKER} -o use_ctime use_ctime.o
+	@rm use_ctime.o
