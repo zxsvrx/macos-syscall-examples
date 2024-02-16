@@ -2,7 +2,7 @@ ASSEMBLER = nasm -f macho64
 
 LINKER = gcc -nostdlib
 
-FILES = exit read hello_world io alloc uselibio use_ctime
+FILES = exit read hello_world io alloc uselibio use_ctime fork args
 
 
 all: ${FILES}
@@ -52,3 +52,13 @@ use_ctime: use_ctime.asm
 	${ASSEMBLER} -o use_ctime.o use_ctime.asm
 	${LINKER} -o use_ctime use_ctime.o
 	@rm use_ctime.o
+
+fork: fork.asm
+	${ASSEMBLER} -o fork.o fork.asm
+	${LINKER} -o fork fork.o
+	@rm fork.o
+
+args: args.asm
+	${ASSEMBLER} -o args.o args.asm
+	${LINKER} -o args args.o
+	@rm args.o
